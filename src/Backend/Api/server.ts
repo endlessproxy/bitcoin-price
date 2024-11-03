@@ -1,16 +1,21 @@
 import express, { Express, Request, Response } from "express";
 
+// Variables
 const app: Express = express();
 const PORT: number = 8023;
 
-app.get("/", (req: Request, res: Response) => {
-    res.send("Hello World!")
-});
+// Endpoints Call
+const homeRoute = require("./Routes/homeRoute.ts");
+const cryptoRoute = require("./Routes/cryptoRoute.ts");
+const cryptoList = require("./Routes/cryptoListRoute.ts");
 
-app.get("/bitcoin", (req: Request, res: Response) => {
-    res.send("O bitcoin está custando: $395.213");
-});
+// Endpoints
+app.use(homeRoute);
+app.use(cryptoRoute);
+app.use(cryptoList);
 
+
+// Starting Server
 app.listen(PORT, () => {
     console.log(`\nRunning server on: http://localhost:${PORT}\n`)
 });
