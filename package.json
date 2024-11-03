@@ -1,14 +1,19 @@
 {
   "name": "bitcoinproj",
   "version": "1.0.0",
-  "main": "./dist/server.ts",
+  "main": "./dist/server.js",
   "scripts": {
     "dev": "nodemon ./src/Backend/Api/server.ts",
     "build": "tsc",
-    "start": "node ./dist/server.ts"
+    "start": "npm run build && node ./dist/server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "@types/express": "^5.0.0",
+    "axios": "^1.7.7",
+    "express": "^4.21.1"
+  }
 }
