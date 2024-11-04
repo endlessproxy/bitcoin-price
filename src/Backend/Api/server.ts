@@ -5,9 +5,9 @@ const app: Express = express();
 const PORT: number = 8023;
 
 // Endpoints Call
-const homeRoute = require("./Routes/homeRoute.ts");
-const cryptoRoute = require("./Routes/cryptoRoute.ts");
-const cryptoList = require("./Routes/cryptoListRoute.ts");
+const homeRoute = require("./Routes/homeRoute");
+const cryptoRoute = require("./Routes/cryptoRoute");
+const cryptoList = require("./Routes/cryptoListRoute");
 
 // Endpoints
 app.use(homeRoute);
