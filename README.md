@@ -5,7 +5,7 @@ Este projeto é uma API Rest que usa Node.js e TypeScript para fornecer informa�
 
 ## Funcionalidades
 - **Rota `/crypto`**: Retorna uma lista de todas as criptomoedas disponíveis.
-- **Rota `/crypto/:name`**: Retorna informações detalhadas sobre a criptomoeda escolhida, incluindo o nome, ticker e o preço em USD.
+- **Rota `/crypto/:name`**: Retorna informações detalhadas sobre a criptomoeda escolhida.
 
 ![image](https://github.com/user-attachments/assets/e128e964-f663-4def-b5d3-c088c9fc8a59)
 
