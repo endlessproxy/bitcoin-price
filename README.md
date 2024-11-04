@@ -1,7 +1,7 @@
 # Backend: **Crypto API** usando **Node.js** e **TypeScript**
 
 ## Introdução
-Este projeto é uma API Rest que usa Node.js e TypeScript para fornecer informações de criptomoedas utilizando a API pública do CoinCap. A API permite obter uma lista de criptomoedas disponiveis e detalhes de uma moeda selecionada.
+Este projeto é uma API Rest que usa Node.js e TypeScript para fornecer informações de criptomoedas utilizando a API do CoinCap. A API Rest permite retornar uma lista de criptomoedas disponiveis e detalhes de uma moeda selecionada.
 
 ## Funcionalidades
 - **Rota `/crypto`**: Retorna uma lista de todas as criptomoedas disponíveis.
